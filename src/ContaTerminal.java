@@ -32,7 +32,7 @@ import java.util.Scanner;
 
 public class ContaTerminal {
     public static void main(String[] args){
-
+        // variaveis
         int numeroConta;
         String agencia;
         String nomeCliente;
@@ -42,12 +42,15 @@ public class ContaTerminal {
 
         System.out.println("Por favor, digite o número da conta: ");
         numeroConta = teclado.nextInt();
+        teclado.nextLine(); // limpa o buffer
 
         System.out.println("Por favor, digite o número da Agência !: ");
         agencia = teclado.next();
+        teclado.nextLine(); // limpa o buffer
 
         System.out.println("Por favor, digite seu nome!: ");
         nomeCliente =  teclado.next();
+        teclado.nextLine(); // limpa o buffer
 
         System.out.println("Por favor, digite seu saldo!: ");
         saldo = teclado.nextFloat();
@@ -55,6 +58,11 @@ public class ContaTerminal {
         System.out.println("Olá "+ nomeCliente + ", obrigado por criar uma conta em nosso banco,\n" +
                 "sua agência é " + agencia +", numero da conta " + numeroConta + " e seu saldo \n" +
                 "é " + saldo + " reais já está disponível para saque");
+
+        System.out.println("Obrigado por utilizar nossos serviços");
+        System.out.println("Até logo!");
+
+
 
 
 
